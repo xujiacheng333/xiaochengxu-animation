@@ -1,0 +1,22 @@
+.fadeOutToButton-enter{
+  opacity: 0.01;
+  transform: translateY(-50%);
+}
+
+.fadeOutToButton-enter.fadeOutToButton-enter-active{
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1000ms ease-in;
+}
+
+
+.fadeOutToButton-exit{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fadeOutToButton-exit.fadeOutToButton-exit-active{
+  opacity: 0.01;
+  transform: translateX(-50%);
+  transition: all 1000ms ease-in;
+}

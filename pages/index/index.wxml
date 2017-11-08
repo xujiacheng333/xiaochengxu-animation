@@ -1,0 +1,20 @@
+<text> 动画: </text>    
+<text> 渐变 </text>    
+<button bindtap="animation">减少</button>
+<button bindtap="animation2">添加</button>
+
+
+<!-- <view class="box {{fadeIn}}">
+  
+</view> -->
+
+<view class="box {{fade}}"></view>
+
+
+<block wx:for="{{fadeArr}}">
+  <view  class="{{fadeArrAssign[index]}}" data-index="{{index}}" bindtap="removeIt">{{item}}</view>
+</block>
+
+<block wx:for="{{fadeArr}}">
+  <view  class="{{fadeArrClass[index]}}">{{item}}</view>
+</block>
